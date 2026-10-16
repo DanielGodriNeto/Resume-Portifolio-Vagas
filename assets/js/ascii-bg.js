@@ -10,9 +10,10 @@
   const coarse = window.matchMedia('(pointer: coarse)').matches;
 
   // Glyph ramp ordered by visual ink density: letters and digits only.
-  const RAMP = 'ilIjtrfcvxznuoaesyhkdbpqgwmCOQAXZNMWB8';
+  const RAMP = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const hash = (a, b) => { let n = (a * 374761393 + b * 668265263) | 0; n = (n ^ (n >>> 13)) * 1274126177; return ((n ^ (n >>> 16)) >>> 0) / 4294967296; };
   const LEVELS = 10;               // brightness steps per glyph
-  const MAX_GREY = 0x30;           // ambient ceiling (#303030) over a black page
+  const MAX_GREY = 0x3a;           // ambient ceiling (#303030) over a black page
   const LIGHT_GREY = 0x86;         // ceiling under the cursor lantern
   const FPS = 15;
   const FONT = '600 13px "IBM Plex Mono", monospace';
@@ -86,18 +87,20 @@
     const ambientTop = (MAX_GREY - 0x10) / (LIGHT_GREY - 0x10); // ambient share of the brightness range
     for (let r = 0; r < rows; r++) {
       for (let c = 0; c < cols; c++) {
-        const h = height(c * 0.028 + driftX, (r * CH / CW) * 0.028 + driftY + scrollY);
-        const k = Math.min(1, Math.max(0, (h - 0.25) / 0.5));          // 0..1 terrain height
-        const band = (h * 9) % 1;                                      // contour lines
-        const contour = band < 0.07 ? 0.25 : 0;
-        let lvl = Math.min(1, k * 0.8 + contour) * ambientTop;
+        const h = height(c * 0.02 + driftX, (r * CH / CW) * 0.02 + driftY + scrollY);
+        const x = Math.min(1, Math.max(0, (h - 0.5) / 0.22));          // only peaks survive: islands
+        const k = x * x * (3 - 2 * x);
+        const rnd = hash(c, r);
+        let lvl = k * (0.35 + 0.65 * rnd) * ambientTop;                // per-glyph jitter
+        if (rnd > 0.97) lvl = Math.min(1, lvl * 2.2);                  // rare brighter glyph
         if (mouse.x > -900) {
           const dx = c * CW - mouse.x, dy = r * CH - mouse.y;
           const d2 = dx * dx + dy * dy;
-          if (d2 < 32400) lvl = Math.max(lvl, (1 - d2 / 32400) * (0.25 + 0.75 * k));
+          if (d2 < 32400) lvl = Math.max(lvl, (1 - d2 / 32400) * (0.2 + 0.8 * k) * rnd);
         }
+        if (lvl < 0.03) continue;
         const li = Math.round(lvl * (LEVELS - 1));
-        const gi = Math.min(RAMP.length - 1, Math.floor(k * RAMP.length));
+        const gi = Math.floor(hash(c + 31, r + 17 + Math.floor(reduced ? 0 : t * 0.4)) * RAMP.length);
         ctx.drawImage(atlas, gi * cw, li * ch, cw, ch, c * cw, r * ch, cw, ch);
       }
     }
