@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Daniel Godri Neto · Portfolio</title>
-<meta name="description" content="Portfolio de Daniel Godri Neto · Ciência da Computação, PUCPR. Projetos, mods e criações, com demos jogáveis no navegador.">
+<meta name="description" content="Daniel Godri Neto · Ciência da Computação (PUCPR). Projetos de IA, dados e software; procura estágio no Brasil ou no exterior.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="assets/img/create-godri-icon.png">
-<link rel="stylesheet" href="assets/css/style.css?v=18">
+<link rel="stylesheet" href="assets/css/style.css?v=20">
 </head>
 <body>
+<canvas class="ascii-bg" aria-hidden="true"></canvas>
 
 <nav class="nav">
   <div class="container nav__bar">
@@ -38,27 +39,28 @@
     <span class="cross cross--bl"></span><span class="cross cross--br"></span>
     <div class="hero__inner">
       <div class="reveal">
-        <span class="eyebrow"><span data-lang="pt">Estágio em IA, dados e software · Curitiba e remoto</span><span data-lang="en">AI, data and software internships · Curitiba and remote</span><span data-lang="jp">AI・データ・ソフトウェアのインターンを探しています</span></span>
+        <span class="eyebrow"><span data-lang="pt">Estágio em IA, dados e software · Brasil e exterior, remoto ou presencial</span><span data-lang="en">AI, data and software internships · Brazil and abroad, remote or on-site</span><span data-lang="jp">AI・データ・ソフトウェアのインターンを探しています</span></span>
         <h1>
-          <span data-lang="pt">Eu construo coisas<br><span class="outline">jogos, mods e ferramentas</span></span>
-          <span data-lang="en">I build things<br><span class="outline">games, mods and tools</span></span>
-          <span data-lang="jp">僕はものを作る<br><span class="outline">ゲーム、MOD、ツール</span></span>
+          <span data-lang="pt">Eu construo sistemas<br><span class="outline">de IA, dados e software</span></span>
+          <span data-lang="en">I build systems<br><span class="outline">in AI, data and software</span></span>
+          <span data-lang="jp">僕はシステムを作る<br><span class="outline">AI、データ、ソフトウェア</span></span>
         </h1>
         <p class="lead">
-          <span data-lang="pt">Estudante de Ciência da Computação na PUCPR. Faço mods de Minecraft, construí um scanner quantitativo para CS2 e fiquei em 1º e 2º lugar em dois projetos de turma, com jogos que dá para jogar aqui mesmo, mais abaixo.</span>
-          <span data-lang="en">Computer Science student at PUCPR. I mod Minecraft, built a quantitative scanner for CS2, and placed first and second in two class projects, with games you can play further down this page.</span>
-          <span data-lang="jp">PUCPRでコンピュータサイエンスを学ぶ学生です。MinecraftのMODを作り、CS2向けの定量分析スキャナーを開発し、2つのクラスプロジェクトで1位と2位になりました。どちらのゲームもこのページの下で遊べます。</span>
+          <span data-lang="pt">Estudante de Ciência da Computação (PUCPR). Construo projetos de IA, dados e software e testo com método: o que funcionou, o que não funcionou e quanto. Procuro estágio no Brasil ou no exterior, remoto ou presencial.</span>
+          <span data-lang="en">Computer Science student (PUCPR). I build AI, data and software projects and test them with method: what worked, what did not, and by how much. Looking for internships in Brazil or abroad, remote or on-site.</span>
+          <span data-lang="jp">PUCPRでコンピュータサイエンスを学ぶ学生です。AI・データ・ソフトウェアのプロジェクトを作り、何がうまくいき、何がうまくいかなかったかを方法的に検証しています。ブラジル国内外、リモートまたは現地でのインターンを探しています。</span>
         </p>
         <div class="hero__actions">
-          <a class="btn btn--solid" href="#projects"><span data-lang="pt">Ver projetos</span><span data-lang="en">See projects</span><span data-lang="jp">プロジェクトを見る</span></a>
-          <a class="btn" href="#creations"><span data-lang="pt">Coleção de criações</span><span data-lang="en">Collection of creations</span><span data-lang="jp">創作物コレクション</span></a>
+          <a class="btn btn--solid" href="#contact"><span data-lang="pt">Contato</span><span data-lang="en">Contact</span><span data-lang="jp">連絡先</span></a>
+          <a class="btn" href="#projects"><span data-lang="pt">Ver projetos</span><span data-lang="en">See projects</span><span data-lang="jp">プロジェクトを見る</span></a>
           <a class="btn" href="https://github.com/DanielGodriNeto" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </div>
       <div class="titleblock reveal">
         <div class="titleblock__head"><span data-lang="pt">Especificações</span><span data-lang="en">Specifications</span><span data-lang="jp">仕様</span></div>
         <div class="titleblock__stats">
-          <div><b>C2</b><span data-lang="pt">Inglês</span><span data-lang="en">English</span><span data-lang="jp">英語</span></div>
+          <div><b>C2</b><span data-lang="pt">Inglês (EF SET)</span><span data-lang="en">English (EF SET)</span><span data-lang="jp">英語 (EF SET)</span></div>
+          <div><b>8,35</b><span data-lang="pt">IRA (média, 0-10)</span><span data-lang="en">GPA (0-10)</span><span data-lang="jp">GPA (0〜10)</span></div>
         </div>
         <ul class="titleblock__log">
           <li><span><b><span data-lang="pt">1º lugar</span><span data-lang="en">1st place</span><span data-lang="jp">1位</span></b> · Jokenpô</span><span><span data-lang="pt">turma</span><span data-lang="en">class</span><span data-lang="jp">授業</span></span></li>
@@ -129,15 +131,58 @@
 
     <div class="project-grid">
 
+      <!-- Plate 10 -->
+      <article class="plate plate--span2 reveal">
+        <div class="plate__top">
+          <span class="label"><span data-lang="pt">PRANCHA 01</span><span data-lang="en">PLATE 01</span><span data-lang="jp">プレート01</span> · <span data-lang="pt">IA · AVALIAÇÃO</span><span data-lang="en">AI · EVALUATION</span><span data-lang="jp">AI・評価</span></span>
+          <span class="stamp-badge"><span data-lang="pt">Destaque</span><span data-lang="en">Flagship</span><span data-lang="jp">注目</span></span>
+        </div>
+        <h3>Minecraft Diamond Agent</h3>
+        <p><span data-lang="pt">Bot em Node.js (Mineflayer) com 14 habilidades escritas à mão e um planejador em funções puras que minera diamantes a partir de comandos no chat. O foco é a avaliação: 600 spawns fixos, mundo novo por lote e experimentos A/B pareados com IC por bootstrap. 71 de 100 execuções guardaram um diamante em spawns reservados para teste (dificuldade fácil, uma seed; IC 95%: 62-80%). Rejeitei cerca de 12 mudanças sem efeito mensurável; telemetria JSON por execução, análise de falhas em 1.329 execuções e 24 arquivos de teste.</span><span data-lang="en">A Node.js (Mineflayer) bot with 14 hand-coded skills and a pure-function planner that mines diamonds from chat commands. The focus is evaluation: 600 fixed spawns, a fresh world per batch and paired A/B experiments with bootstrap CIs. 71 of 100 runs banked a diamond on held-out spawns (easy difficulty, one seed; 95% CI 62-80%). I rejected about a dozen changes with no measurable effect; per-run JSON telemetry, failure analysis over 1,329 runs and 24 test files.</span><span data-lang="jp">Node.js(Mineflayer)製のボット。手書きの14スキルと純粋関数のプランナーで、チャットのコマンドからダイヤモンドを採掘します。重点は評価です: 固定スポーン600個、バッチごとに新しいワールド、ブートストラップ信頼区間付きの対応ありA/B実験。テスト用に確保したスポーンで100回中71回ダイヤモンドを確保(難易度イージー、シード1つ、95%信頼区間 62〜80%)。効果が測れない変更を約12個却下。実行ごとのJSONテレメトリ、1,329回の失敗分析、24個のテストファイル。</span></p>
+        <p class="plate__note"><span data-lang="pt">Uso de IA: construído com assistência de IA (Claude); explico qualquer trecho do código. O bot é scriptado (não aprendido); o que importa aqui é o sistema de avaliação.</span><span data-lang="en">AI use: built with AI coding assistance (Claude); I can walk through any of the code. The bot is scripted (not learned); the evaluation system is the point.</span><span data-lang="jp">AI利用: AIコーディング支援(Claude)を使って作成。コードはどこでも説明できます。ボットはスクリプト型(学習型ではない)です。重要なのは評価システムです。</span></p>
+        <div class="plate__actions">
+          <a class="btn" href="https://github.com/DanielGodriNeto/minecraft-agent" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <div class="plate__foot"><span>JavaScript · Node.js · Mineflayer</span><span>01/10</span></div>
+      </article>
+
+      <!-- Plate 08 -->
+      <article class="plate plate--span2 reveal">
+        <div class="plate__top">
+          <span class="label"><span data-lang="pt">PRANCHA 02</span><span data-lang="en">PLATE 02</span><span data-lang="jp">プレート02</span> · <span data-lang="pt">PESQUISA</span><span data-lang="en">RESEARCH</span><span data-lang="jp">研究</span></span>
+        </div>
+        <h3>Overreact</h3>
+        <p><span data-lang="pt">Estudos de evento pré-registrados sobre sobrerreação do mercado (ações e cripto), com IC por bootstrap por dia, placebo e custos pessimistas (0,2% por lado). A maioria das hipóteses falhou; um sinal passou em dados nunca vistos: comprar 1 min após uma cascata de liquidação e sair em +4 h rendeu +1,36% por operação líquido (IC 95% +0,28 a +2,29, n=293), concentrado em poucos dias de pânico. Está em confirmação ao vivo em paper, sem dinheiro real. Inclui gravador ao vivo (barras, spreads, liquidações, funding, open interest) e 54 testes pytest.</span><span data-lang="en">Pre-registered event studies on market overreaction (stocks and crypto), with day-block bootstrap CIs, placebo baselines and pessimistic costs (0.2% per side). Most hypotheses failed; one signal passed on unseen data: buying 1 min after a liquidation cascade and exiting at +4 h made +1.36% per trade net (95% CI +0.28 to +2.29, n=293), concentrated in a few panic days. It is in live paper confirmation, with no real money. Includes a live recorder (bars, spreads, liquidations, funding, open interest) and 54 pytest tests.</span><span data-lang="jp">市場の過剰反応(株式と暗号資産)に関する事前登録型のイベントスタディ。日単位ブロックのブートストラップ信頼区間、プラセボ、保守的なコスト(片道0.2%)を使用。多くの仮説は失敗しましたが、1つのシグナルが未使用データで通過しました: 清算の連鎖の1分後に買い、4時間後に売ると、コスト控除後で1取引あたり+1.36%(95%信頼区間 +0.28〜+2.29、n=293)。ごく少数のパニック日に集中しています。現在はペーパーでライブ検証中で、実資金は使っていません。</span></p>
+        <p class="plate__note"><span data-lang="pt">Uso de IA: construído com assistência de IA (Claude); explico qualquer trecho do código. Os resultados são meus; o escopo e a metodologia estão no README.</span><span data-lang="en">AI use: built with AI coding assistance (Claude); I can walk through any of the code. The results are mine; scope and method are in the README.</span><span data-lang="jp">AI利用: AIコーディング支援(Claude)を使って作成。コードはどこでも説明できます。結果は自分のものです。範囲と手法はREADMEにあります。</span></p>
+        <div class="plate__actions">
+          <a class="btn" href="https://github.com/DanielGodriNeto/overreact" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <div class="plate__foot"><span>Python · pandas · SEC EDGAR · WebSockets</span><span>02/10</span></div>
+      </article>
+
+      <!-- Plate 09 -->
+      <article class="plate plate--span2 reveal">
+        <div class="plate__top">
+          <span class="label"><span data-lang="pt">PRANCHA 03</span><span data-lang="en">PLATE 03</span><span data-lang="jp">プレート03</span> · <span data-lang="pt">IA</span><span data-lang="en">AI</span><span data-lang="jp">AI</span></span>
+        </div>
+        <h3>Local AI Agent</h3>
+        <p><span data-lang="pt">Assistente de voz 100% local: Silero VAD + faster-whisper e um classificador de intenção sobre um modelo de embeddings pré-treinado (multilingual-e5-small, ONNX int8, ~5 ms por decisão) que só executa ações permitidas; pontuação baixa, empate ou pergunta vão para um LLM local (Ollama) ou o Claude Code, com confirmação. Daemon residente (~53 MB ocioso), dependências fixadas por hash, modelos verificados por sha256, 13 arquivos pytest em CI (GitHub Actions) e um script de avaliação do classificador.</span><span data-lang="en">A fully local voice assistant: Silero VAD + faster-whisper, plus an intent classifier on a pre-trained embedding model (multilingual-e5-small, int8 ONNX, ~5 ms per decision) that only runs allowlisted actions; low scores, ties and questions go to a local LLM (Ollama) or Claude Code, with confirmation. A resident daemon (~53 MB idle), hash-pinned dependencies, sha256-verified models, 13 pytest files in CI (GitHub Actions) and a classifier evaluation script.</span><span data-lang="jp">完全ローカルの音声アシスタント。Silero VAD + faster-whisper と、事前学習済みの埋め込みモデル(multilingual-e5-small、int8 ONNX、1回の判定に約5 ms)による意図分類器を使い、許可された操作だけを実行します。スコアが低い場合や質問はローカルLLM(Ollama)またはClaude Codeに回し、確認を取ります。常駐デーモン(待機時約53 MB)、ハッシュ固定の依存関係、sha256検証済みモデル、CI(GitHub Actions)上の13個のpytestファイル、分類器の評価スクリプトを備えています。</span></p>
+        <p class="plate__note"><span data-lang="pt">Uso de IA: construído com assistência de IA (Claude); explico qualquer trecho do código. A parte de classificação usa um modelo pré-treinado; o meu é o sistema ao redor.</span><span data-lang="en">AI use: built with AI coding assistance (Claude); I can walk through any of the code. Intent classification uses a pre-trained model; the surrounding system is mine.</span><span data-lang="jp">AI利用: AIコーディング支援(Claude)を使って作成。コードはどこでも説明できます。意図分類は事前学習済みモデルを使用。周辺のシステムは自分で作りました。</span></p>
+        <div class="plate__actions">
+          <a class="btn" href="https://github.com/DanielGodriNeto/local-ai-agent" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <div class="plate__foot"><span>Python · ONNX Runtime · faster-whisper</span><span>03/10</span></div>
+      </article>
+
       <!-- Plate 01 · CS2 Scanner -->
       <article class="plate plate--span2 reveal" id="cs2">
         <div class="plate__top">
-          <span class="label"><span data-lang="pt">PRANCHA 01</span><span data-lang="en">PLATE 01</span><span data-lang="jp">プレート01</span> · <span data-lang="pt">FERRAMENTA</span><span data-lang="en">TOOL</span><span data-lang="jp">ツール</span></span>
-          <span class="stamp-badge"><span data-lang="pt">Flagship</span><span data-lang="en">Flagship</span><span data-lang="jp">フラッグシップ</span></span>
+          <span class="label"><span data-lang="pt">PRANCHA 04</span><span data-lang="en">PLATE 04</span><span data-lang="jp">プレート04</span> · <span data-lang="pt">FERRAMENTA</span><span data-lang="en">TOOL</span><span data-lang="jp">ツール</span></span>
+          
         </div>
         <h3>CS2 Trade-Up &amp; Anomaly Scanner</h3>
-        <p><span data-lang="pt">Scanner quantitativo somente-leitura para "trade-ups" e preços errados no Steam Market. Simula milhares de combinações por coleção, rankeia por ROI% e tem estratégias opcionais de mistura de desgaste e diluição entre coleções para melhorar a chance. ~50 módulos Python, API HTTP com 30+ endpoints, dashboard React, extensão de navegador e um modelo de ML que calibra as previsões sem sobrepor a fórmula. Sem compra automática: os Termos da Steam proíbem bots de mercado, então ele só aponta as oportunidades. Tem também uma demo separada que usa a API da Claude (Tool Use) para responder perguntas em linguagem natural puxando dados direto do scanner.</span><span data-lang="en">A read-only quantitative scanner for CS2 trade-ups and Steam Market mispricing. Simulates thousands of per-collection combinations, ranks by ROI%, with optional float-mixing and cross-collection filler strategies to improve the odds. ~50 Python modules, a 30+ endpoint HTTP API, a React dashboard, a browser extension, and an ML model that calibrates predictions without overriding the formula. No auto-buy: Steam's terms prohibit market bots, so it stops at listing the opportunities. There's also a separate demo that uses the Claude API (Tool Use) to answer natural-language questions by calling straight into the scanner's data.</span><span data-lang="jp">CS2の「トレードアップ」契約とSteamマーケットの価格の歪みを検出する読み取り専用の定量スキャナーです。コレクションごとに数千通りの組み合わせをシミュレーションし、ROI%でランク付けします。的中率を上げるためのフロート(摩耗値)ミックスやコレクション間フィラー戦略もオプションで使えます。Pythonモジュール約50個、30以上のエンドポイントを持つHTTP API、Reactダッシュボード、ブラウザ拡張機能、そして予測を調整するだけで数式を上書きしないML(機械学習)モデルを搭載。自動購入機能はありません。Steamの利用規約がマーケットボットを禁止しているため、チャンスを提示するだけです。Claude API(Tool Use)を使い、スキャナーのデータを直接呼び出して自然言語の質問に答える別デモも用意しています。</span></p>
-        <p class="plate__note"><span data-lang="pt">Uso de IA: Gemini e Claude para apoio pontual no código (depuração, revisão e checagem de segurança). Concepção, arquitetura e estratégia do scanner são minhas.</span><span data-lang="en">AI use: Gemini and Claude for targeted coding support (debugging, review, and security checks). The scanner's concept, architecture, and strategy are mine.</span><span data-lang="jp">AI利用: GeminiとClaudeをデバッグ、コードレビュー、セキュリティ確認などの限定的な支援に使用。スキャナーの構想、設計、戦略は自分自身によるものです。</span></p>
+        <p><span data-lang="pt">Ferramenta que lê preços do mercado de itens do CS2 e aponta oportunidades com melhor retorno estimado. Só lê dados: não compra nada, porque os Termos da Steam proíbem robôs de mercado. Tem painel web publicado, API com 30+ endpoints e um modelo de ML que ajusta as previsões; os retornos estão sendo revalidados antes de serem divulgados.</span><span data-lang="en">A tool that reads prices from the CS2 in-game item market and flags opportunities with a better estimated return. It is read-only: it buys nothing, because the Steam terms prohibit market bots. It has a published web dashboard, a 30+ endpoint API and an ML model that adjusts predictions; returns are being re-validated before being reported.</span><span data-lang="jp">CS2のゲーム内アイテム市場の価格を読み取り、推定リターンの高い機会を提示するツールです。読み取り専用で、購入は一切しません(Steamの規約がボットを禁止しているため)。公開済みのWebダッシュボード、30以上のエンドポイントを持つAPI、予測を調整するMLモデルを備え、リターンは公開前に再検証中です。</span></p>
+        <p class="plate__note"><span data-lang="pt">Uso de IA: construído com assistência de IA (Claude e Gemini); explico qualquer trecho do código. Concepção, arquitetura e estratégia do scanner são minhas.</span><span data-lang="en">AI use: built with AI coding assistance (Claude and Gemini); I can walk through any of the code. The scanner's concept, architecture, and strategy are mine.</span><span data-lang="jp">AI利用: AIコーディング支援(ClaudeとGemini)を使って作成。コードはどこでも説明できます。スキャナーの構想、設計、戦略は自分自身によるものです。</span></p>
 
         <div class="play-frame play-frame--tall" data-lazy-game data-game-src="tools/ml-sandbox/index.html" data-game-title="ML Training Sandbox">
           <button type="button" class="play-frame__trigger">
@@ -151,56 +196,13 @@
           <a class="btn btn--solid" href="https://cs2-trade-calculator.onrender.com" target="_blank" rel="noopener">▶ <span data-lang="pt">Ver o app real</span><span data-lang="en">See the actual app</span><span data-lang="jp">実際のアプリを見る</span></a>
           <a class="btn" href="https://github.com/DanielGodriNeto/cs2-trade-calculator" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <div class="plate__foot"><span>Python · React · ML</span><span>01/10</span></div>
-      </article>
-
-      <!-- Plate 02 · Jokenpo playable -->
-      <article class="plate plate--span2 reveal" id="jokenpo">
-        <div class="plate__top">
-          <span class="label"><span data-lang="pt">PRANCHA 02</span><span data-lang="en">PLATE 02</span><span data-lang="jp">プレート02</span> · <span data-lang="pt">JOGO</span><span data-lang="en">GAME</span><span data-lang="jp">ゲーム</span></span>
-          <span class="stamp-badge">🏆 <span data-lang="pt">1º lugar</span><span data-lang="en">1st place</span><span data-lang="jp">1位</span></span>
-        </div>
-        <h3>Jokenpô</h3>
-        <p><span data-lang="pt">Pedra, papel e tesoura em Python, eleito o melhor projeto de Raciocínio Algorítmico. É um porte fiel do jogo de terminal, jogável aqui: os 5 modos (Humano×Humano, Humano×Computador, Computador×Computador, 2v2 com alvos e Battle Royale com eliminação por maioria), a animação de gestos em ASCII e os títulos em pyfiglet, tudo em português como o original. O código original está no GitHub.</span><span data-lang="en">Rock-paper-scissors in Python, voted best project in Algorithmic Reasoning. A faithful port of the terminal game, playable here: all 5 modes (Human×Human, Human×Computer, Computer×Computer, 2v2 with targeting, and Battle Royale with majority-type elimination), the ASCII gesture animation, and the pyfiglet banners, all in Portuguese like the original. The original code is on GitHub.</span><span data-lang="jp">Pythonで作ったじゃんけん。「アルゴリズム的思考」の授業で最優秀プロジェクトに選ばれました。ターミナル版の忠実な移植で、ここで遊べます: 5モード全部(人対人、人対コンピュータ、コンピュータ対コンピュータ、ターゲット指定の2対2、多数決で脱落するバトルロイヤル)、ASCIIジェスチャーアニメーション、pyfigletのバナー、すべてオリジナル同様ポルトガル語です。元のコードはGitHubにあります。</span></p>
-        <div class="jkp-term" data-jkp-screen role="log" tabindex="0"></div>
-        <div class="jkp-inputline" data-jkp-inputline hidden>
-          <input class="jkp-input" data-jkp-input type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
-        </div>
-        <button type="button" class="btn btn--solid jkp-start" data-jkp-start hidden>▶ <span data-lang="pt">Jogar de novo</span><span data-lang="en">Play again</span><span data-lang="jp">もう一度プレイ</span></button>
-        <p class="jkp-hint"><span data-lang="pt">Clique no campo, digite e aperte Enter.</span><span data-lang="en">Click the field, type, and press Enter.</span><span data-lang="jp">入力欄をクリックし、入力してEnterを押してください。</span></p>
-        <div class="plate__actions">
-          <a class="btn" href="https://github.com/DanielGodriNeto/PjBL-RA1-Jokenpo" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-        <div class="plate__foot"><span>Python → JS remake</span><span>02/10</span></div>
-      </article>
-
-      <!-- Plate 03 · Create: Godri -->
-      <article class="plate reveal">
-        <div class="plate__top">
-          <span class="label"><span data-lang="pt">PRANCHA 03</span><span data-lang="en">PLATE 03</span><span data-lang="jp">プレート03</span> · MOD</span>
-          <span class="stamp-badge">Minecraft</span>
-        </div>
-        <div class="plate__media is-icon">
-          <div class="mod-icons">
-            <img src="assets/img/create-godri-icon.png" alt="Create: Godri mod icon" loading="lazy">
-            <span class="mod-icons__x">×</span>
-            <img src="assets/img/create-mod-icon.webp" alt="Create mod icon" loading="lazy">
-          </div>
-        </div>
-        <p class="plate__note" style="margin-top:-6px;"><span data-lang="pt">Ícone à direita: mod "Create" original (© Fabricators of Create). Meu backport usa a arte dele, buscada do seu próprio jogo.</span><span data-lang="en">Right icon: the original "Create" mod (© Fabricators of Create). My backport uses its artwork, fetched from your own game.</span><span data-lang="jp">右のアイコン: オリジナルの「Create」MOD (© Fabricators of Create)。私のバックポートは、あなた自身のゲームから取得したそのアートワークを使用しています。</span></p>
-        <h3>Create: Godri</h3>
-        <p><span data-lang="pt">Backport do addon "Create Fly" para Minecraft 1.21.1 no Fabric. Não existia build para essa versão, então fiz uma. Na primeira execução, uma tela de setup pergunta ao Modrinth qual release do Create combina com o seu jogo, baixa, confere o checksum e copia só a arte (4.925 arquivos) da cópia que você já tem instalada. Nada protegido por direitos autorais entra no .jar. Compilei do zero contra o toolchain do Fabric e o build sai limpo.</span><span data-lang="en">A backport of the "Create Fly" addon to Minecraft 1.21.1 on Fabric. No build of it existed for that version, so I made one. First launch opens a setup screen that asks Modrinth which Create release matches your game, downloads it, verifies the checksum, and copies out only the artwork (4,925 files) from the copy you already have installed. Nothing copyrighted ships inside the .jar. I built it from scratch against Fabric's toolchain, and it compiles clean.</span><span data-lang="jp">「Create Fly」アドオンをMinecraft 1.21.1(Fabric)向けにバックポートしました。そのバージョン用のビルドが存在しなかったので、自分で作りました。初回起動時、セットアップ画面がModrinthに対応するCreateのリリースを問い合わせ、ダウンロードし、チェックサムを検証し、あなたが既にインストールしている本体から素材だけ(4,925ファイル)をコピーします。著作権で保護されたデータは.jarの中に一切含まれません。Fabricのツールチェーンでゼロからビルドし、問題なくコンパイルできます。</span></p>
-        <p class="plate__note"><span data-lang="pt">Uso de IA: Gemini e Claude para apoio pontual no código (depuração, revisão e checagem de segurança). Concepção do backport e todas as decisões técnicas são minhas.</span><span data-lang="en">AI use: Gemini and Claude for targeted coding support (debugging, review, and security checks). The backport's concept and every technical decision are mine.</span><span data-lang="jp">AI利用: GeminiとClaudeをデバッグ、コードレビュー、セキュリティ確認などの限定的な支援に使用。バックポートの構想とすべての技術的判断は自分自身によるものです。</span></p>
-        <div class="plate__actions">
-          <a class="btn" href="https://github.com/DanielGodriNeto/Create-Godri" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-        <div class="plate__foot"><span>Java · Fabric</span><span>03/10</span></div>
+        <div class="plate__foot"><span>Python · React · ML</span><span>04/10</span></div>
       </article>
 
       <!-- Plate 04 · GPU Terrain / Godri-Culling -->
       <article class="plate reveal">
         <div class="plate__top">
-          <span class="label"><span data-lang="pt">PRANCHA 04</span><span data-lang="en">PLATE 04</span><span data-lang="jp">プレート04</span> · MOD</span>
+          <span class="label"><span data-lang="pt">PRANCHA 05</span><span data-lang="en">PLATE 05</span><span data-lang="jp">プレート05</span> · MOD</span>
           <span class="stamp-badge">Minecraft</span>
         </div>
         <div class="plate__media">
@@ -208,29 +210,11 @@
         </div>
         <h3>GPU Terrain</h3>
         <p><span data-lang="pt">Add-on cliente para o Sodium que passa o trabalho de visibilidade para a GPU. Compute shaders OpenGL 4.5 fazem frustum culling e occlusion culling hierárquico-Z a cada frame, escrevem os próprios draw calls indiretos e entregam direto para o render pass do Sodium. Nada volta para a CPU. Se a GPU não tiver a extensão necessária, ele volta para o Sodium original sem quebrar nada. Vem com um harness de benchmark de FPS e um comparador de screenshots para pegar regressão visual a cada mudança, e compila limpo num build do zero contra Minecraft, Fabric Loader e Java 25.</span><span data-lang="en">A client-side add-on for Sodium that moves visibility work onto the GPU. OpenGL 4.5 compute shaders do frustum and hierarchical-Z occlusion culling every frame, write the indirect draw calls themselves, and feed them straight into Sodium's render pass. Nothing round-trips back to the CPU. If the GPU lacks the extension it needs, it falls back to unmodified Sodium and nothing breaks. It ships an FPS benchmark harness and a screenshot-diff tool to catch visual regressions, and compiles cleanly from a fresh build against Minecraft, Fabric Loader, and Java 25.</span><span data-lang="jp">Sodium向けのクライアントサイドアドオンで、可視判定の処理をGPUに移します。OpenGL 4.5のコンピュートシェーダーがフレームごとにフラスタムカリングと階層的Zオクルージョンカリングを行い、間接描画コマンド自体を生成してSodiumのレンダーパスへ直接渡します。CPUへの往復はありません。GPUに必要な拡張機能がない場合は、未改造のSodiumに戻り、何も壊れません。FPSベンチマークとスクリーンショット差分ツールを同梱して視覚的なリグレッションを検出し、Minecraft、Fabric Loader、Java 25に対してゼロからのビルドで問題なくコンパイルできます。</span></p>
-        <p class="plate__note"><span data-lang="pt">Uso de IA: Gemini e Claude para apoio pontual no código (depuração, revisão e checagem de segurança). Arquitetura dos compute shaders e todas as decisões técnicas são minhas.</span><span data-lang="en">AI use: Gemini and Claude for targeted coding support (debugging, review, and security checks). The compute-shader architecture and every technical decision are mine.</span><span data-lang="jp">AI利用: GeminiとClaudeをデバッグ、コードレビュー、セキュリティ確認などの限定的な支援に使用。コンピュートシェーダーの設計とすべての技術的判断は自分自身によるものです。</span></p>
+        <p class="plate__note"><span data-lang="pt">Uso de IA: construído com assistência de IA (Claude e Gemini); explico qualquer trecho do código. Arquitetura dos compute shaders e todas as decisões técnicas são minhas.</span><span data-lang="en">AI use: built with AI coding assistance (Claude and Gemini); I can walk through any of the code. The compute-shader architecture and every technical decision are mine.</span><span data-lang="jp">AI利用: AIコーディング支援(ClaudeとGemini)を使って作成。コードはどこでも説明できます。コンピュートシェーダーの設計とすべての技術的判断は自分自身によるものです。</span></p>
         <div class="plate__actions">
           <a class="btn" href="https://github.com/DanielGodriNeto/Godri-Culling" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <div class="plate__foot"><span>Java · OpenGL 4.5</span><span>04/10</span></div>
-      </article>
-
-      <!-- Plate 05 · Ecos da Vanguarda -->
-      <article class="plate reveal">
-        <div class="plate__top">
-          <span class="label"><span data-lang="pt">PRANCHA 05</span><span data-lang="en">PLATE 05</span><span data-lang="jp">プレート05</span> · <span data-lang="pt">JOGO</span><span data-lang="en">GAME</span><span data-lang="jp">ゲーム</span></span>
-          <span class="stamp-badge"><span data-lang="pt">Experiência Criativa</span><span data-lang="en">Creative Experience</span><span data-lang="jp">クリエイティブ・エクスペリエンス</span></span>
-        </div>
-        <div class="plate__media">
-          <img src="assets/img/ecos-da-vanguarda-cover.png" alt="Ecos da Vanguarda cover art" loading="lazy">
-        </div>
-        <h3>Ecos da Vanguarda</h3>
-        <p><span data-lang="pt">Top-down shooter narrativo em Construct 3, para a matéria de Experiência Criativa. O ciclo é de risco e recompensa: explorar biomas corrompidos (floresta, cavernas, catacumbas), voltar à vila para comprar poções e melhorar o equipamento, e no fim enfrentar a Abominação Ressurgida. Jogável no navegador pelo itch.io.</span><span data-lang="en">A narrative top-down shooter in Construct 3, for the Creative Experience course. The loop is risk and reward: explore corrupted biomes (forest, caves, catacombs), head back to the village to buy potions and upgrade gear, then face the Resurgent Abomination at the end. Playable in the browser through itch.io.</span><span data-lang="jp">Construct 3で作ったナラティブ型トップダウンシューティング。「クリエイティブ・エクスペリエンス」の授業課題です。リスクとリワードのループが軸で、汚染されたバイオーム(森、洞窟、地下墓地)を探索し、村に戻ってポーションや装備を強化し、最後に「復活した忌まわしきもの」と戦います。itch.ioからブラウザで直接プレイできます。</span></p>
-        <div class="plate__actions">
-          <a class="btn btn--solid" href="https://mancato-hiroshi.itch.io/ecos-da-vanguarda" target="_blank" rel="noopener">▶ <span data-lang="pt">Jogar no itch.io</span><span data-lang="en">Play on itch.io</span><span data-lang="jp">itch.ioでプレイ</span></a>
-          <a class="btn" href="https://github.com/DanielGodriNeto/Ecos-da-Vanguarda" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-        <div class="plate__foot"><span>Construct 3</span><span>05/10</span></div>
+        <div class="plate__foot"><span>Java · OpenGL 4.5</span><span>05/10</span></div>
       </article>
 
       <!-- Plate 06 · B2B lead pipeline -->
@@ -247,65 +231,85 @@ $ _</pre>
         </div>
         <h3><span data-lang="pt">Pipeline de Geração de Leads</span><span data-lang="en">Lead-Generation Pipeline</span><span data-lang="jp">リード獲得パイプライン</span></h3>
         <p><span data-lang="pt">Automação de ponta a ponta: acha negócios locais, gera um site de demonstração com os dados de cada um (avaliações, fotos, contato) e faz o primeiro contato por e-mail ou WhatsApp. Orquestrada no n8n, com checkout pelo Mercado Pago e um modo de simulação obrigatório antes de qualquer disparo. Só entram leads com telefone verificado. Já entregou sites para 3 clientes em Curitiba.</span><span data-lang="en">An end-to-end automation: it finds local businesses, generates a demo site from each one's data (reviews, photos, contact info), and makes first contact by email or WhatsApp. Built on n8n, with Mercado Pago checkout and a mandatory simulation mode before anything sends. Only leads with a verified phone number get through. It has delivered sites to 3 clients in Curitiba so far.</span><span data-lang="jp">エンドツーエンドの自動化です。地域の店舗を見つけ、それぞれのデータ(口コミ、写真、連絡先)からデモサイトを生成し、メールかWhatsAppで最初の連絡を取ります。n8nで構築し、Mercado Pagoの決済を統合、実際に送信する前に必ずシミュレーションモードを通します。電話番号が確認できたリードだけが対象です。これまでにクリチバの3社へサイトを納品しました。</span></p>
-        <p class="plate__note"><span data-lang="pt">Uso de IA: Gemini e Claude para apoio pontual no código (depuração, revisão e checagem de segurança). Estratégia do funil e todas as decisões de negócio são minhas.</span><span data-lang="en">AI use: Gemini and Claude for targeted coding support (debugging, review, and security checks). The funnel strategy and every business decision are mine.</span><span data-lang="jp">AI利用: GeminiとClaudeをデバッグ、コードレビュー、セキュリティ確認などの限定的な支援に使用。ファネル戦略とすべての事業判断は自分自身によるものです。</span></p>
+        <p class="plate__note"><span data-lang="pt">Uso de IA: construído com assistência de IA (Claude e Gemini); explico qualquer trecho do código. Estratégia do funil e todas as decisões de negócio são minhas.</span><span data-lang="en">AI use: built with AI coding assistance (Claude and Gemini); I can walk through any of the code. The funnel strategy and every business decision are mine.</span><span data-lang="jp">AI利用: AIコーディング支援(ClaudeとGemini)を使って作成。コードはどこでも説明できます。ファネル戦略とすべての事業判断は自分自身によるものです。</span></p>
         <div class="plate__foot"><span>Node.js · n8n · <span data-lang="pt">código privado</span><span data-lang="en">private codebase</span><span data-lang="jp">非公開コード</span></span><span>06/10</span></div>
+      </article>
+
+      <!-- Plate 02 · Jokenpo playable -->
+      <article class="plate plate--span2 reveal" id="jokenpo">
+        <div class="plate__top">
+          <span class="label"><span data-lang="pt">PRANCHA 07</span><span data-lang="en">PLATE 07</span><span data-lang="jp">プレート07</span> · <span data-lang="pt">JOGO</span><span data-lang="en">GAME</span><span data-lang="jp">ゲーム</span></span>
+          <span class="stamp-badge">🏆 <span data-lang="pt">1º lugar</span><span data-lang="en">1st place</span><span data-lang="jp">1位</span></span>
+        </div>
+        <h3>Jokenpô</h3>
+        <p><span data-lang="pt">Pedra, papel e tesoura em Python, eleito o melhor projeto de Raciocínio Algorítmico. É um porte fiel do jogo de terminal, jogável aqui: os 5 modos (Humano×Humano, Humano×Computador, Computador×Computador, 2v2 com alvos e Battle Royale com eliminação por maioria), a animação de gestos em ASCII e os títulos em pyfiglet, tudo em português como o original. O código original está no GitHub.</span><span data-lang="en">Rock-paper-scissors in Python, voted best project in Algorithmic Reasoning. A faithful port of the terminal game, playable here: all 5 modes (Human×Human, Human×Computer, Computer×Computer, 2v2 with targeting, and Battle Royale with majority-type elimination), the ASCII gesture animation, and the pyfiglet banners, all in Portuguese like the original. The original code is on GitHub.</span><span data-lang="jp">Pythonで作ったじゃんけん。「アルゴリズム的思考」の授業で最優秀プロジェクトに選ばれました。ターミナル版の忠実な移植で、ここで遊べます: 5モード全部(人対人、人対コンピュータ、コンピュータ対コンピュータ、ターゲット指定の2対2、多数決で脱落するバトルロイヤル)、ASCIIジェスチャーアニメーション、pyfigletのバナー、すべてオリジナル同様ポルトガル語です。元のコードはGitHubにあります。</span></p>
+        <div class="jkp-term" data-jkp-screen role="log" tabindex="0"></div>
+        <div class="jkp-inputline" data-jkp-inputline hidden>
+          <input class="jkp-input" data-jkp-input type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+        </div>
+        <button type="button" class="btn jkp-reset" data-jkp-reset>↺ <span data-lang="pt">Reiniciar</span><span data-lang="en">Reset</span><span data-lang="jp">リセット</span></button>
+        <button type="button" class="btn btn--solid jkp-start" data-jkp-start hidden>▶ <span data-lang="pt">Jogar de novo</span><span data-lang="en">Play again</span><span data-lang="jp">もう一度プレイ</span></button>
+        <p class="jkp-hint"><span data-lang="pt">Clique no campo, digite e aperte Enter.</span><span data-lang="en">Click the field, type, and press Enter.</span><span data-lang="jp">入力欄をクリックし、入力してEnterを押してください。</span></p>
+        <div class="plate__actions">
+          <a class="btn" href="https://github.com/DanielGodriNeto/PjBL-RA1-Jokenpo" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <div class="plate__foot"><span>Python → JS remake</span><span>07/10</span></div>
       </article>
 
       <!-- Plate 07 · Batalha Naval 2 (desktop Pygame; linked, not embedded) -->
       <article class="plate plate--span2 reveal">
         <div class="plate__top">
-          <span class="label"><span data-lang="pt">PRANCHA 07</span><span data-lang="en">PLATE 07</span><span data-lang="jp">プレート07</span> · <span data-lang="pt">JOGO</span><span data-lang="en">GAME</span><span data-lang="jp">ゲーム</span></span>
+          <span class="label"><span data-lang="pt">PRANCHA 08</span><span data-lang="en">PLATE 08</span><span data-lang="jp">プレート08</span> · <span data-lang="pt">JOGO</span><span data-lang="en">GAME</span><span data-lang="jp">ゲーム</span></span>
           <span class="stamp-badge">🥈 <span data-lang="pt">2º lugar</span><span data-lang="en">2nd place</span><span data-lang="jp">2位</span></span>
         </div>
         <h3>Batalha Naval 2</h3>
         <p><span data-lang="pt">Simulador tático em Pygame: módulos de dano, economia, névoa de guerra, sonar por ruído e geração procedural de mapas. Roda no desktop com Python; o código está no GitHub.</span><span data-lang="en">A tactical simulator in Pygame: modular ship damage, economy, fog of war, noise-based sonar, and procedural map generation. It runs on the desktop with Python; the code is on GitHub.</span><span data-lang="jp">Pygame製の戦術シミュレーター。モジュール式の船体ダメージ、経済システム、戦場の霧、ノイズベースのソナー、プロシージャル生成マップを搭載。デスクトップ上でPythonで動きます。コードはGitHubにあります。</span></p>
-        <p class="plate__note"><span data-lang="pt">Uso de IA: Gemini e Claude para apoio pontual no código (depuração, revisão e checagem de segurança). Design do jogo, regras e liderança da equipe são meus.</span><span data-lang="en">AI use: Gemini and Claude for targeted coding support (debugging, review, and security checks). The game design, rules, and team leadership are mine.</span><span data-lang="jp">AI利用: GeminiとClaudeをデバッグ、コードレビュー、セキュリティ確認などの限定的な支援に使用。ゲームデザイン、ルール、チームのリーダーシップは自分自身によるものです。</span></p>
+        <p class="plate__note"><span data-lang="pt">Uso de IA: construído com assistência de IA (Claude e Gemini); explico qualquer trecho do código. Design do jogo, regras e liderança da equipe são meus.</span><span data-lang="en">AI use: built with AI coding assistance (Claude and Gemini); I can walk through any of the code. The game design, rules, and team leadership are mine.</span><span data-lang="jp">AI利用: AIコーディング支援(ClaudeとGemini)を使って作成。コードはどこでも説明できます。ゲームデザイン、ルール、チームのリーダーシップは自分自身によるものです。</span></p>
         <div class="plate__actions">
           <a class="btn" href="https://github.com/DanielGodriNeto/Jogo-battleship" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <div class="plate__foot"><span>Python · Pygame</span><span>07/10</span></div>
+        <div class="plate__foot"><span>Python · Pygame</span><span>08/10</span></div>
       </article>
 
-      <!-- Plate 08 -->
-      <article class="plate plate--span2 reveal">
+      <!-- Plate 03 · Create: Godri -->
+      <article class="plate reveal">
         <div class="plate__top">
-          <span class="label"><span data-lang="pt">PRANCHA 08</span><span data-lang="en">PLATE 08</span><span data-lang="jp">プレート08</span> · <span data-lang="pt">PESQUISA</span><span data-lang="en">RESEARCH</span><span data-lang="jp">研究</span></span>
+          <span class="label"><span data-lang="pt">PRANCHA 09</span><span data-lang="en">PLATE 09</span><span data-lang="jp">プレート09</span> · MOD</span>
+          <span class="stamp-badge">Minecraft</span>
         </div>
-        <h3>Overreact</h3>
-        <p><span data-lang="pt">Estudos de evento pré-registrados sobre sobrerreação do mercado (ações e cripto), com IC por bootstrap por dia, placebo e custos pessimistas (0,2% por lado). A maioria das hipóteses falhou; um sinal passou em dados nunca vistos: comprar 1 min após uma cascata de liquidação e sair em +4 h rendeu +1,36% por operação líquido (IC 95% +0,28 a +2,29, n=293), concentrado em poucos dias de pânico. Está em confirmação ao vivo em paper, sem dinheiro real. Inclui gravador ao vivo (barras, spreads, liquidações, funding, open interest) e 54 testes pytest.</span><span data-lang="en">Pre-registered event studies on market overreaction (stocks and crypto), with day-block bootstrap CIs, placebo baselines and pessimistic costs (0.2% per side). Most hypotheses failed; one signal passed on unseen data: buying 1 min after a liquidation cascade and exiting at +4 h made +1.36% per trade net (95% CI +0.28 to +2.29, n=293), concentrated in a few panic days. It is in live paper confirmation, with no real money. Includes a live recorder (bars, spreads, liquidations, funding, open interest) and 54 pytest tests.</span><span data-lang="jp">市場の過剰反応(株式と暗号資産)に関する事前登録型のイベントスタディ。日単位ブロックのブートストラップ信頼区間、プラセボ、保守的なコスト(片道0.2%)を使用。多くの仮説は失敗しましたが、1つのシグナルが未使用データで通過しました: 清算の連鎖の1分後に買い、4時間後に売ると、コスト控除後で1取引あたり+1.36%(95%信頼区間 +0.28〜+2.29、n=293)。ごく少数のパニック日に集中しています。現在はペーパーでライブ検証中で、実資金は使っていません。</span></p>
-        <p class="plate__note"><span data-lang="pt">Uso de IA: construído com assistência de IA (Claude); explico qualquer trecho do código. Os resultados são meus; o escopo e a metodologia estão no README.</span><span data-lang="en">AI use: built with AI coding assistance (Claude); I can walk through any of the code. The results are mine; scope and method are in the README.</span><span data-lang="jp">AI利用: AIコーディング支援(Claude)を使って作成。コードはどこでも説明できます。結果は自分のものです。範囲と手法はREADMEにあります。</span></p>
+        <div class="plate__media is-icon">
+          <div class="mod-icons">
+            <img src="assets/img/create-godri-icon.png" alt="Create: Godri mod icon" loading="lazy">
+            <span class="mod-icons__x">×</span>
+            <img src="assets/img/create-mod-icon.webp" alt="Create mod icon" loading="lazy">
+          </div>
+        </div>
+        <p class="plate__note" style="margin-top:-6px;"><span data-lang="pt">Ícone à direita: mod "Create" original (© Fabricators of Create). Meu backport usa a arte dele, buscada do seu próprio jogo.</span><span data-lang="en">Right icon: the original "Create" mod (© Fabricators of Create). My backport uses its artwork, fetched from your own game.</span><span data-lang="jp">右のアイコン: オリジナルの「Create」MOD (© Fabricators of Create)。私のバックポートは、あなた自身のゲームから取得したそのアートワークを使用しています。</span></p>
+        <h3>Create: Godri</h3>
+        <p><span data-lang="pt">Backport do addon "Create Fly" para Minecraft 1.21.1 no Fabric. Não existia build para essa versão, então fiz uma. Na primeira execução, uma tela de setup pergunta ao Modrinth qual release do Create combina com o seu jogo, baixa, confere o checksum e copia só a arte (4.925 arquivos) da cópia que você já tem instalada. Nada protegido por direitos autorais entra no .jar. Compilei do zero contra o toolchain do Fabric e o build sai limpo.</span><span data-lang="en">A backport of the "Create Fly" addon to Minecraft 1.21.1 on Fabric. No build of it existed for that version, so I made one. First launch opens a setup screen that asks Modrinth which Create release matches your game, downloads it, verifies the checksum, and copies out only the artwork (4,925 files) from the copy you already have installed. Nothing copyrighted ships inside the .jar. I built it from scratch against Fabric's toolchain, and it compiles clean.</span><span data-lang="jp">「Create Fly」アドオンをMinecraft 1.21.1(Fabric)向けにバックポートしました。そのバージョン用のビルドが存在しなかったので、自分で作りました。初回起動時、セットアップ画面がModrinthに対応するCreateのリリースを問い合わせ、ダウンロードし、チェックサムを検証し、あなたが既にインストールしている本体から素材だけ(4,925ファイル)をコピーします。著作権で保護されたデータは.jarの中に一切含まれません。Fabricのツールチェーンでゼロからビルドし、問題なくコンパイルできます。</span></p>
+        <p class="plate__note"><span data-lang="pt">Uso de IA: construído com assistência de IA (Claude e Gemini); explico qualquer trecho do código. Concepção do backport e todas as decisões técnicas são minhas.</span><span data-lang="en">AI use: built with AI coding assistance (Claude and Gemini); I can walk through any of the code. The backport's concept and every technical decision are mine.</span><span data-lang="jp">AI利用: AIコーディング支援(ClaudeとGemini)を使って作成。コードはどこでも説明できます。バックポートの構想とすべての技術的判断は自分自身によるものです。</span></p>
         <div class="plate__actions">
-          <a class="btn" href="https://github.com/DanielGodriNeto/overreact" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="https://github.com/DanielGodriNeto/Create-Godri" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <div class="plate__foot"><span>Python · pandas · SEC EDGAR · WebSockets</span><span>08/10</span></div>
+        <div class="plate__foot"><span>Java · Fabric</span><span>09/10</span></div>
       </article>
 
-      <!-- Plate 09 -->
-      <article class="plate plate--span2 reveal">
+      <!-- Plate 05 · Ecos da Vanguarda -->
+      <article class="plate reveal">
         <div class="plate__top">
-          <span class="label"><span data-lang="pt">PRANCHA 09</span><span data-lang="en">PLATE 09</span><span data-lang="jp">プレート09</span> · <span data-lang="pt">IA</span><span data-lang="en">AI</span><span data-lang="jp">AI</span></span>
+          <span class="label"><span data-lang="pt">PRANCHA 10</span><span data-lang="en">PLATE 10</span><span data-lang="jp">プレート10</span> · <span data-lang="pt">JOGO</span><span data-lang="en">GAME</span><span data-lang="jp">ゲーム</span></span>
+          <span class="stamp-badge"><span data-lang="pt">Experiência Criativa</span><span data-lang="en">Creative Experience</span><span data-lang="jp">クリエイティブ・エクスペリエンス</span></span>
         </div>
-        <h3>Local AI Agent</h3>
-        <p><span data-lang="pt">Assistente de voz 100% local: Silero VAD + faster-whisper e um classificador de intenção sobre um modelo de embeddings pré-treinado (multilingual-e5-small, ONNX int8, ~5 ms por decisão) que só executa ações permitidas; pontuação baixa, empate ou pergunta vão para um LLM local (Ollama) ou o Claude Code, com confirmação. Daemon residente (~53 MB ocioso), dependências fixadas por hash, modelos verificados por sha256, 13 arquivos pytest em CI (GitHub Actions) e um script de avaliação do classificador.</span><span data-lang="en">A fully local voice assistant: Silero VAD + faster-whisper, plus an intent classifier on a pre-trained embedding model (multilingual-e5-small, int8 ONNX, ~5 ms per decision) that only runs allowlisted actions; low scores, ties and questions go to a local LLM (Ollama) or Claude Code, with confirmation. A resident daemon (~53 MB idle), hash-pinned dependencies, sha256-verified models, 13 pytest files in CI (GitHub Actions) and a classifier evaluation script.</span><span data-lang="jp">完全ローカルの音声アシスタント。Silero VAD + faster-whisper と、事前学習済みの埋め込みモデル(multilingual-e5-small、int8 ONNX、1回の判定に約5 ms)による意図分類器を使い、許可された操作だけを実行します。スコアが低い場合や質問はローカルLLM(Ollama)またはClaude Codeに回し、確認を取ります。常駐デーモン(待機時約53 MB)、ハッシュ固定の依存関係、sha256検証済みモデル、CI(GitHub Actions)上の13個のpytestファイル、分類器の評価スクリプトを備えています。</span></p>
-        <p class="plate__note"><span data-lang="pt">Uso de IA: construído com assistência de IA (Claude); explico qualquer trecho do código. A parte de classificação usa um modelo pré-treinado; o meu é o sistema ao redor.</span><span data-lang="en">AI use: built with AI coding assistance (Claude); I can walk through any of the code. Intent classification uses a pre-trained model; the surrounding system is mine.</span><span data-lang="jp">AI利用: AIコーディング支援(Claude)を使って作成。コードはどこでも説明できます。意図分類は事前学習済みモデルを使用。周辺のシステムは自分で作りました。</span></p>
+        <div class="plate__media">
+          <img src="assets/img/ecos-da-vanguarda-cover.png" alt="Ecos da Vanguarda cover art" loading="lazy">
+        </div>
+        <h3>Ecos da Vanguarda</h3>
+        <p><span data-lang="pt">Top-down shooter narrativo em Construct 3, para a matéria de Experiência Criativa. O ciclo é de risco e recompensa: explorar biomas corrompidos (floresta, cavernas, catacumbas), voltar à vila para comprar poções e melhorar o equipamento, e no fim enfrentar a Abominação Ressurgida. Jogável no navegador pelo itch.io.</span><span data-lang="en">A narrative top-down shooter in Construct 3, for the Creative Experience course. The loop is risk and reward: explore corrupted biomes (forest, caves, catacombs), head back to the village to buy potions and upgrade gear, then face the Resurgent Abomination at the end. Playable in the browser through itch.io.</span><span data-lang="jp">Construct 3で作ったナラティブ型トップダウンシューティング。「クリエイティブ・エクスペリエンス」の授業課題です。リスクとリワードのループが軸で、汚染されたバイオーム(森、洞窟、地下墓地)を探索し、村に戻ってポーションや装備を強化し、最後に「復活した忌まわしきもの」と戦います。itch.ioからブラウザで直接プレイできます。</span></p>
         <div class="plate__actions">
-          <a class="btn" href="https://github.com/DanielGodriNeto/local-ai-agent" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn--solid" href="https://mancato-hiroshi.itch.io/ecos-da-vanguarda" target="_blank" rel="noopener">▶ <span data-lang="pt">Jogar no itch.io</span><span data-lang="en">Play on itch.io</span><span data-lang="jp">itch.ioでプレイ</span></a>
+          <a class="btn" href="https://github.com/DanielGodriNeto/Ecos-da-Vanguarda" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <div class="plate__foot"><span>Python · ONNX Runtime · faster-whisper</span><span>09/10</span></div>
-      </article>
-
-      <!-- Plate 10 -->
-      <article class="plate plate--span2 reveal">
-        <div class="plate__top">
-          <span class="label"><span data-lang="pt">PRANCHA 10</span><span data-lang="en">PLATE 10</span><span data-lang="jp">プレート10</span> · <span data-lang="pt">IA · AVALIAÇÃO</span><span data-lang="en">AI · EVALUATION</span><span data-lang="jp">AI・評価</span></span>
-        </div>
-        <h3>Minecraft Diamond Agent</h3>
-        <p><span data-lang="pt">Bot em Node.js (Mineflayer) com 14 habilidades escritas à mão e um planejador em funções puras que minera diamantes a partir de comandos no chat. O foco é a avaliação: 600 spawns fixos, mundo novo por lote e experimentos A/B pareados com IC por bootstrap. 71 de 100 execuções guardaram um diamante em spawns reservados para teste (dificuldade fácil, uma seed; IC 95%: 62-80%). Rejeitei cerca de 12 mudanças sem efeito mensurável; telemetria JSON por execução, análise de falhas em 1.329 execuções e 24 arquivos de teste.</span><span data-lang="en">A Node.js (Mineflayer) bot with 14 hand-coded skills and a pure-function planner that mines diamonds from chat commands. The focus is evaluation: 600 fixed spawns, a fresh world per batch and paired A/B experiments with bootstrap CIs. 71 of 100 runs banked a diamond on held-out spawns (easy difficulty, one seed; 95% CI 62-80%). I rejected about a dozen changes with no measurable effect; per-run JSON telemetry, failure analysis over 1,329 runs and 24 test files.</span><span data-lang="jp">Node.js(Mineflayer)製のボット。手書きの14スキルと純粋関数のプランナーで、チャットのコマンドからダイヤモンドを採掘します。重点は評価です: 固定スポーン600個、バッチごとに新しいワールド、ブートストラップ信頼区間付きの対応ありA/B実験。テスト用に確保したスポーンで100回中71回ダイヤモンドを確保(難易度イージー、シード1つ、95%信頼区間 62〜80%)。効果が測れない変更を約12個却下。実行ごとのJSONテレメトリ、1,329回の失敗分析、24個のテストファイル。</span></p>
-        <p class="plate__note"><span data-lang="pt">Uso de IA: construído com assistência de IA (Claude); explico qualquer trecho do código. O bot é scriptado (não aprendido); o que importa aqui é o sistema de avaliação.</span><span data-lang="en">AI use: built with AI coding assistance (Claude); I can walk through any of the code. The bot is scripted (not learned); the evaluation system is the point.</span><span data-lang="jp">AI利用: AIコーディング支援(Claude)を使って作成。コードはどこでも説明できます。ボットはスクリプト型(学習型ではない)です。重要なのは評価システムです。</span></p>
-        <div class="plate__actions">
-          <a class="btn" href="https://github.com/DanielGodriNeto/minecraft-agent" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-        <div class="plate__foot"><span>JavaScript · Node.js · Mineflayer</span><span>10/10</span></div>
+        <div class="plate__foot"><span>Construct 3</span><span>10/10</span></div>
       </article>
 
     </div>
@@ -413,7 +417,7 @@ $ _</pre>
   <div class="container reveal">
     <div class="dim"><span data-lang="pt">CONTATO · FOLHA 03</span><span data-lang="en">CONTACT · SHEET 03</span><span data-lang="jp">連絡先 · シート03</span></div>
     <h2><span data-lang="pt">Vamos conversar</span><span data-lang="en">Let's talk</span><span data-lang="jp">話しましょう</span></h2>
-    <p class="contact-line">godrineto@gmail.com · +55 (41) 99816-0225</p>
+    <p class="contact-line">godrineto@gmail.com</p>
     <div class="footer__links">
       <a class="btn" href="mailto:godrineto@gmail.com">Email</a>
       <a class="btn" href="https://github.com/DanielGodriNeto" target="_blank" rel="noopener">GitHub</a>
@@ -424,6 +428,7 @@ $ _</pre>
 </footer>
 
 <script src="assets/js/app.js?v=8"></script>
-<script src="assets/js/jokenpo.js?v=5"></script>
+<script src="assets/js/jokenpo.js?v=6"></script>
+<script src="assets/js/ascii-bg.js?v=2"></script>
 </body>
 </html>

@@ -10,6 +10,7 @@
   const inputWrap = root.querySelector('[data-jkp-inputline]');
   const inputEl = root.querySelector('[data-jkp-input]');
   const startBtn = root.querySelector('[data-jkp-start]');
+  const resetBtn = root.querySelector('[data-jkp-reset]');
   if (!screenEl || !inputEl || !startBtn) return;
 
   const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -82,9 +83,13 @@
   // ---- terminal ----
   const esc = (s) => String(s).replace(/[&<>]/g, (c) => (c === '&' ? '&amp;' : c === '<' ? '&lt;' : '&gt;'));
 
+  // Reset support: bumping `gen` makes every pending sleep/read of the old game throw.
+  let gen = 0;
+  const RESET = 'reset';
   const term = {
     buf: '',
     _pending: null,
+    _abort: null,
     _paint() { screenEl.innerHTML = this.buf; screenEl.scrollTop = screenEl.scrollHeight; },
     write(s) { this.buf += esc(s); this._paint(); },
     line(s = '') { this.write(s + '\n'); },
@@ -92,10 +97,14 @@
     clear() { this.buf = ''; this._paint(); },
     frame(s) { this.buf = esc(s) + '\n'; this._paint(); },
     figlet(key) { this.write(decode(FIG[key]) + '\n\n'); },
-    sleep(ms) { return new Promise((r) => setTimeout(r, ms)); },
+    sleep(ms) {
+      const g = gen;
+      return new Promise((r) => setTimeout(r, ms)).then(() => { if (g !== gen) throw new Error(RESET); });
+    },
     read() {
-      return new Promise((res) => {
+      return new Promise((res, rej) => {
         this._pending = res;
+        this._abort = rej;
         inputWrap.hidden = false;
         inputEl.disabled = false;
         // Auto-focus only after the player has interacted once, so the
@@ -387,12 +396,30 @@
     try {
       await menu();
     } catch (e) {
-      term.line('\n[erro: ' + (e && e.message ? e.message : e) + ']');
+      if (!e || e.message !== RESET) term.line('\n[erro: ' + (e && e.message ? e.message : e) + ']');
     } finally {
       running = false;
       startBtn.hidden = false; // now a "play again" button
+      if (restart) { restart = false; run(); }
     }
   }
+
+  // Reset: abandon the current game and go back to the menu.
+  let restart = false;
+  function reset() {
+    gen++;
+    inputEl.value = '';
+    inputWrap.hidden = true;
+    if (!running) { run(); return; }
+    restart = true;
+    if (term._abort) {
+      const abort = term._abort;
+      term._pending = null;
+      term._abort = null;
+      abort(new Error(RESET));
+    }
+  }
+  if (resetBtn) resetBtn.addEventListener('click', reset);
   startBtn.addEventListener('click', run);
   startBtn.hidden = true;
   run(); // auto-start — no click needed
