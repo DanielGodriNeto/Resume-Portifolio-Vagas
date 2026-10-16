@@ -12,7 +12,7 @@ static site — plain HTML/CSS/JS, no build step.
 
 Jokenpô runs inline (`assets/js/jokenpo.js`). Batalha Naval 2 is a desktop
 Pygame game, linked to its repo rather than embedded
-([Mancato/Jogo-battleship](https://gitlab.com/Mancato/Jogo-battleship)).
+([Mancato/Jogo-battleship](https://github.com/DanielGodriNeto/Jogo-battleship)).
 
 ## Running locally
 
