@@ -13,6 +13,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 
 socketserver.ThreadingTCPServer.allow_reuse_address = True
-with socketserver.ThreadingTCPServer(("", PORT), Handler) as httpd:
+with socketserver.ThreadingTCPServer(("127.0.0.1", PORT), Handler) as httpd:
     print(f"serving {httpd.server_address} (no-store)")
     httpd.serve_forever()
