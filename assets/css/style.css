@@ -588,3 +588,10 @@ p.ai-note { margin: 34px 0 0; font-family: var(--font-mono); font-size: 10.5px; 
 /* Cards stay legible over the texture: near-opaque black, no blur. */
 .plate, .spec-card, .log-item { background: rgba(0, 0, 0, 0.82); }
 .nav { background: rgba(0, 0, 0, 0.9); }
+
+/* Polish pass: press feedback, hover only where a pointer exists, skip link */
+.btn { transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease, color 160ms ease, border-color 160ms ease; }
+.btn:active { transform: scale(0.97); }
+@media (hover: none) { .btn:hover { transform: none; } }
+.skip-link { position: absolute; left: 12px; top: -48px; z-index: 100; padding: 10px 14px; background: #fff; color: #000; font-family: var(--font-mono); font-size: 13px; }
+.skip-link:focus { top: 12px; }
