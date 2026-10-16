@@ -1,0 +1,11 @@
+# Personal/sensitive source material — never publish these.
+# The site's content is generated FROM these, not by publishing them.
+Certificate/
+Daniel_Godri_Neto_Resume_Claude_Campus_Ambassador.docx
+Daniel_Godri_Neto_Resume_Claude_Campus_Ambassador.pdf
+Edital ADA PUCPR Processo Seletivo 27-28.pdf
+
+# Build artifacts / caches
+node_modules/
+.DS_Store
+Thumbs.db
