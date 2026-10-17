@@ -9,6 +9,7 @@
     root.classList.remove('lang-pt', 'lang-en', 'lang-jp');
     root.classList.add('lang-' + lang);
     root.setAttribute('lang', lang === 'jp' ? 'ja' : lang);
+    document.querySelectorAll('[data-set-lang]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.setLang === lang)));
     const input = document.querySelector('[data-jkp-input]');
     if (input) input.setAttribute('aria-label', JKP_ARIA[lang] || JKP_ARIA.pt);
   }
