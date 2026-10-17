@@ -6,6 +6,11 @@
   document.querySelectorAll('.hero h1 .outline').forEach((el) => {
     if (!el.offsetParent) return; // only the language currently shown
     const final = el.textContent;
+    const sr = document.createElement('span');
+    sr.className = 'sr-only';
+    sr.textContent = final;
+    el.after(sr);
+    el.setAttribute('aria-hidden', 'true');
     const start = performance.now();
     const DURATION = 900;
     (function tick(now) {
@@ -17,6 +22,7 @@
       }
       el.textContent = out;
       if (p < 1) requestAnimationFrame(tick);
+      else { el.removeAttribute('aria-hidden'); sr.remove(); }
     })(start);
   });
 })();
