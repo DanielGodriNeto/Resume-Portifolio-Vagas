@@ -619,3 +619,5 @@ p.ai-note { margin: 34px 0 0; font-family: var(--font-mono); font-size: 10.5px; 
 .ledger__row b { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--graphite); }
 .ledger__row b.ok { color: #fff; }
 @media (max-width: 640px) { .ledger__row { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+
+.ledger__row a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
