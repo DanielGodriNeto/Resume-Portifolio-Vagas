@@ -595,3 +595,18 @@ p.ai-note { margin: 34px 0 0; font-family: var(--font-mono); font-size: 10.5px; 
 @media (hover: none) { .btn:hover { transform: none; } }
 .skip-link { position: absolute; left: 12px; top: -48px; z-index: 100; padding: 10px 14px; background: #fff; color: #000; font-family: var(--font-mono); font-size: 13px; }
 .skip-link:focus { top: 12px; }
+
+/* Proof strip: real numbers, each with the limit of what it proves */
+.proof { padding: 56px 0 24px; }
+.proof__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line-dim); background: rgba(0,0,0,0.82); }
+.proof__item { padding: 24px 22px 22px; border-right: 1px solid var(--line-dim); display: flex; flex-direction: column; gap: 12px; }
+.proof__item:last-child { border-right: none; }
+.proof__num { font-family: var(--font-display); font-weight: 800; font-size: clamp(48px, 5.4vw, 72px); line-height: 0.95; color: #fff; font-variant-numeric: tabular-nums; }
+.proof__num small { font-size: 0.4em; color: var(--graphite); font-weight: 700; }
+.proof__label { color: var(--ink); font-size: 15px; line-height: 1.45; }
+.proof__limit { color: var(--graphite); font-size: 13px; line-height: 1.5; margin-top: auto; padding-top: 12px; border-top: 1px dashed var(--line-dim); }
+.proof__limit b { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin-right: 4px; }
+.plate__why { font-size: 14px; color: var(--ink-soft); margin: 4px 0 0; padding-top: 10px; border-top: 1px dashed var(--line-dim); }
+.plate__why b { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; margin-right: 6px; }
+@media (max-width: 1000px) { .proof__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .proof__item:nth-child(2) { border-right: none; } .proof__item:nth-child(-n+2) { border-bottom: 1px solid var(--line-dim); } }
+@media (max-width: 560px) { .proof__grid { grid-template-columns: minmax(0, 1fr); } .proof__item { border-right: none; border-bottom: 1px solid var(--line-dim); } .proof__item:last-child { border-bottom: none; } }

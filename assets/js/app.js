@@ -28,8 +28,9 @@
 
   let saved = null;
   try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) { /* private mode etc. */ }
-  // Portuguese is the default for every visitor; language only changes via the toggle.
-  applyLang(saved || 'pt');
+  // First visit follows the browser language (pt, ja, otherwise en); the toggle overrides and is remembered.
+  const browserLang = (navigator.language || 'pt').toLowerCase();
+  applyLang(saved || (browserLang.startsWith('pt') ? 'pt' : browserLang.startsWith('ja') ? 'jp' : 'en'));
 
   document.querySelectorAll('[data-set-lang]').forEach((btn) => {
     btn.addEventListener('click', () => {
